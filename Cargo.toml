@@ -11,7 +11,21 @@ license-file = "LICENSE"
 
 [dependencies]
 libc = "0.2"
-cpython = "0.1"
-python3-sys = "0.1"
 num-complex = "0.1"
 ndarray = "0.10"
+
+[dependencies.python27-sys]
+optional = true
+version = "0.1"
+
+[dependencies.python3-sys]
+optional = true
+version = "0.1"
+
+[dependencies.cpython]
+version = "0.1"
+default-features = false
+features =  ["python27-sys"]
+
+[features]
+default = ["python27-sys"]
