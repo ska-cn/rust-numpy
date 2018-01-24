@@ -1,7 +1,7 @@
-#[cfg(feature="python27-sys")]
+#[cfg(feature="python27")]
 extern crate python27_sys as pyffi;
 
-#[cfg(feature="python3-sys")]
+#[cfg(feature="python3")]
 extern crate python3_sys as pyffi;
 extern crate cpython;
 extern crate libc;

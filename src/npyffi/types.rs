@@ -1,8 +1,8 @@
 #![allow(non_camel_case_types)]
-#[cfg(feature="python27-sys")]
+#[cfg(feature="python27")]
 use pyffi::{Py_intptr_t, Py_uintptr_t, Py_ssize_t as Py_hash_t};
 
-#[cfg(feature="python3-sys")]
+#[cfg(feature="python3")]
 use pyffi::{Py_intptr_t, Py_uintptr_t, Py_hash_t};
 use std::os::raw::*;
 
